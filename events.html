@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+</head>
+<body>
+  <div id="content"></div>
+  <script>
+    fetch('under-construction.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('content').innerHTML = html;
+      })
+      .catch(() => {
+        document.getElementById('content').textContent = 'Unable to load under-construction.html.';
+      });
+  </script>
+</body>
+</html>

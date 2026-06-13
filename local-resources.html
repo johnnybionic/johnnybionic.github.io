@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Resources</title>
+</head>
+<body>
+    <div id="include-target"></div>
+    <script>
+        fetch('under-construction.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('include-target').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Failed to load under-construction.html:', error);
+                document.getElementById('include-target').textContent = 'Content failed to load.';
+            });
+    </script>
+</body>
+</html>
