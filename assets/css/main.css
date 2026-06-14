@@ -732,6 +732,7 @@ hr {
           margin-top: -3em; }
           .row.gtr-200.gtr-uniform > * {
             padding-top: 3em; } }
+
   @media screen and (max-width: 736px) {
     .row {
       display: flex;
@@ -858,6 +859,8 @@ hr {
           margin-top: -3em; }
           .row.gtr-200.gtr-uniform > * {
             padding-top: 3em; } }
+
+/*
   @media screen and (max-width: 480px) {
     .row {
       display: flex;
@@ -984,6 +987,7 @@ hr {
           margin-top: -3em; }
           .row.gtr-200.gtr-uniform > * {
             padding-top: 3em; } }
+*/
 
 /* Section/Article */
 section.special, article.special {
@@ -1815,6 +1819,7 @@ button,
           width: calc(100% + 4.5em); }
         .posts article:nth-last-child(3) {
           margin-bottom: 4.5em; } }
+/*
   @media screen and (max-width: 480px) {
     .posts {
       margin: 0 0 2em 0;
@@ -1830,6 +1835,7 @@ button,
           margin-bottom: 0; }
           .posts article:last-child:after {
             display: none; } }
+*/
 
 /* Wrapper */
 #wrapper {
@@ -1873,6 +1879,7 @@ button,
       padding: 0 4em 0.1em 4em ; }
       #main > .inner > section {
         padding: 4em 0 2em 0 ; } }
+
   @media screen and (max-width: 736px) {
     #main > .inner {
       padding: 0 2em 0.1em 2em ; }
@@ -2049,6 +2056,9 @@ button,
           margin-left: -0.4375em; }
       body.is-preload #sidebar {
         display: none; } }
+
+/* this section causes the sidebar to disappear when the screen is small e.g. on a mobile */
+/*
   @media screen and (max-width: 736px) {
     #sidebar {
       width: 100%;
@@ -2080,6 +2090,7 @@ button,
         position: absolute;
         top: 1em;
         width: 5em; } }
+*/
 
 /* Header */
 #header {
