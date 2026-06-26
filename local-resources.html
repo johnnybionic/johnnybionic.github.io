@@ -2,26 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <title>Local Resources</title>
 </head>
-<body>
-    <div id="include-target"></div>
-    <script>
-        fetch('under-construction.html')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.text();
-            })
-            .then(html => {
-                document.getElementById('include-target').innerHTML = html;
-            })
-            .catch(error => {
-                console.error('Failed to load under-construction.html:', error);
-                document.getElementById('include-target').textContent = 'Content failed to load.';
-            });
-    </script>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            <div id="header-container"></div>
+
+            <!-- Content -->
+            <section>
+                <header class="main">
+                    <h1>Local Resources</h1>
+                 </header>
+                <div class="row">
+                    <section>
+                        <p>Interesting websites and blogs from the local area and beyond
+                        </p>
+                        <p>If you have anything you'd like added here, please get in touch via the <a href="contact.html">Contacts</a> page</p>
+
+                    </section>
+                </div>
+
+                <h2 id="other-ra">Other Charlton and Greenwich Residents Associations</h2>
+
+                <h2 id="parks">"Friends of" sites</h2>
+
+                <!-- Content -->
+                <h2>Sample Content</h2>
+                <p></p>
+                <div class="row">
+                    <section>
+                        <span class="icon solid major fa-bolt"></span>
+                        <h3>Our Mission</h3>
+                        <p></p>
+                    </section>
+                    <section>
+                        <span class="icon solid major fa-heart"></span>
+                        <h3>Our Values</h3>
+                        <p></p>
+                    </section>
+                    <section>
+                        <span class="icon solid major fa-chart-bar"></span>
+                        <h3>Our Vision</h3>
+                        <p></p>
+                    </section>
+
+                </div>
+
+                <hr class="major" />
+
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="inner"></div>
+
+        <div class="inner" id="sidebar-content">
+        </div>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script src="assets/js/load-sidebar.js"></script>
+<script src="assets/js/load-header.js"></script>
+
 </body>
 </html>
