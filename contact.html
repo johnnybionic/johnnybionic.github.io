@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Events</title>
+  <title>Contact</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body>
-  <div id="content"></div>
-  <script>
-    fetch('under-construction.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('content').innerHTML = html;
-      })
-      .catch(() => {
-        document.getElementById('content').textContent = 'Unable to load under-construction.html.';
-      });
-  </script>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+  <!-- Main -->
+  <div id="main">
+    <div class="inner">
+
+      <!-- Header -->
+      <div id="header-container"></div>
+
+      <!-- Content -->
+      <section>
+        <header class="main">
+          <h1>Contact Us</h1>
+        </header>
+Enter3 you
+        <div>
+          <h2>Send us an email</h2>
+          <a href="mailto:information@wcra.org">Click here using your own email application</a> or use the form below
+        </div>
+
+        <h2>Sign up for our newsletter</h2>
+
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScyiDLHS-eSjJjOfi6N2PK1BpxdahUe8MYRaHIoRy3qd35-tg/viewform?embedded=true" width="640" height="510">Loading…</iframe>
+
+        <h2>Send us a comment</h2>
+        If you'd like a response, please enter an email address, and we'll get back to you as soon as we can
+
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzeJg13BXVGtzU5kDk4KQ5jhSEPtgX1cb5BawP1QZgdq0dLw/viewform?embedded=true" width="640" height="650">Loading…</iframe>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <div class="inner" id="sidebar-content">
+    </div>
+  </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script src="assets/js/load-sidebar.js"></script>
+<script src="assets/js/load-header.js"></script>
+
 </body>
+
 </html>
