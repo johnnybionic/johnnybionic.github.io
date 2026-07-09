@@ -1,5 +1,5 @@
 // Load header from external HTML file
-fetch('header.html')
+fetch('/header.html')
 	.then(response => response.text())
 	.then(data => {
 		document.getElementById('header-container').innerHTML = data;

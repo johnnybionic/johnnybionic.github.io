@@ -1,5 +1,5 @@
 // Load sidebar.html dynamically
-fetch('./sidebar.html')
+fetch('/sidebar.html')
 	.then(response => response.text())
 	.then(html => {
 		document.getElementById('sidebar-content').innerHTML = html;
