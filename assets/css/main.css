@@ -1481,6 +1481,13 @@ table {
       border-bottom: 0; }
     table.alt tfoot {
       border-top: 0; }
+  /* fixes the width of the "Facebook icon" column */
+  table.local-resources {
+    table-layout:fixed; }
+    table.local-resources td {
+         overflow: hidden;
+    }
+    table.local-resources td:nth-of-type(2) {width:40px}
 
 /* Button */
 input[type="submit"],
