@@ -1066,7 +1066,9 @@ textarea {
     box-shadow: 0 0 0 1px #f56a6a; }
 
 select {
+/*
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(210, 215, 217, 0.75)' /%3E%3C/svg%3E");
+  */
   background-size: 1.25em;
   background-repeat: no-repeat;
   background-position: calc(100% - 1em) center;
@@ -2120,13 +2122,18 @@ button,
         -ms-flex-shrink: 0;
         flex-shrink: 0;
         margin: 0 0 4em 0;
+
         height: 25em;
         max-height: 50vh;
         min-height: 18em;
         width: 100%; } }
+  /* mobile screen */
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
-      max-height: 35vh; } }
+        max-height: 35vh;
+        height: 15em;
+        min-height: 14em;
+      } }
 
 @media screen and (max-width: 736px) {
 
@@ -2138,7 +2145,7 @@ button,
   #banner .image {
     width: 80%; }
   #banner .image {
-    margin: 2em 0 0 0;
+    margin: 0em 0 0 0;
     height: auto;
     max-height: none; }
   #banner .image img {
@@ -2147,7 +2154,7 @@ button,
   /* increased padding on left side to prevent writing over sidebar icon */
     padding: 0 1.5em 0.1em 4em; }
   #main > .inner > section {
-    padding: 2.5em 0 1.5em 0; }
+    padding: 1em 0 1em 0; }
   .features,
   .posts,
   .mini-posts {
