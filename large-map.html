@@ -33,11 +33,13 @@
             <p>Map data © <a href="https://openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a> contributors</p>
 
 
-            <table>
+            <!-- allows quick navigation back if clicked on the small map
+                - can't include the footer here as it would mean two divs with the same name
+            -->
+            <table class="for-buttons">
                 <tr>
-                    <td><a href="/index.html" class="button primary">Home</a></td>
                     <td><a href="javascript:history.back()" class="button primary">Back (previous page)</a></td>
-                    <td><a href="/about.html" class="button primary">About Us</a></td>
+                    <td><a href="/index.html" class="button primary">Home</a></td>
                 </tr>
             </table>
 

@@ -4,4 +4,4 @@ fetch('/footer.html')
 	.then(data => {
 		document.getElementById('footer-container').innerHTML = data;
 	})
-	.catch(error => console.error('Error loading header:', error));
+	.catch(error => console.error('Error loading footer:', error));

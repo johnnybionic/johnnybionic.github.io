@@ -1300,6 +1300,17 @@ table {
     }
     table.local-resources td:nth-of-type(2) {width:40px}
 
+  table.for-buttons {
+    }
+    table.for-buttons td {
+        padding: 0em 0em;
+        vertical-align: middle;
+    }
+    table.for-buttons tr {
+        padding: 0em 0em;
+        vertical-align: middle;
+    }
+
 /* Button */
 input[type="submit"],
 input[type="reset"],
