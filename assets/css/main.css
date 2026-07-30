@@ -116,7 +116,7 @@ a {
   text-decoration: none; }
   a:hover {
     border-bottom-color: #f56a6a;
-    color: #f56a6a /*!important*/; }
+    color: #f56a6a ; }
     a:hover strong {
       color: inherit; }
 
@@ -146,6 +146,11 @@ h1, h2, h3, h4, h5, h6 {
     color: inherit;
     text-decoration: none;
     border-bottom: 0; }
+
+  /* h2 is used as links in posts - make it obvious it is a link */
+  h2.link a {
+    border-bottom: medium solid black;
+    }
 
 h1 {
   font-size: 4em;
@@ -1967,47 +1972,6 @@ button,
       object-position: center;
       width: 100%; }
 
-  /* this section messed up images in <span> sections, and only applied within certain screen dimensions (737 - 1001 px wide)
-  /*
-  @media screen and (orientation: portrait) {
-    #banner {
-      -moz-flex-direction: column-reverse;
-      -webkit-flex-direction: column-reverse;
-      -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse; }
-      #banner h1 br {
-        display: none; }
-      #banner .content {
-        -moz-flex-grow: 0;
-        -webkit-flex-grow: 0;
-        -ms-flex-grow: 0;
-        flex-grow: 0;
-        -moz-flex-shrink: 0;
-        -webkit-flex-shrink: 0;
-        -ms-flex-shrink: 0;
-        flex-shrink: 0;
-        width: 100%; }
-
-
-      #banner .image {
-        -moz-flex-grow: 0;
-        -webkit-flex-grow: 0;
-        -ms-flex-grow: 0;
-        flex-grow: 0;
-        -moz-flex-shrink: 0;
-        -webkit-flex-shrink: 0;
-        -ms-flex-shrink: 0;
-        flex-shrink: 0;
-        margin: 0 0 4em 0;
-
-        height: 25em;
-        max-height: 50vh;
-        min-height: 18em;
-        width: 100%; }
-        }
-
-     }
-    /* */
   /* mobile screen */
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
@@ -2031,6 +1995,15 @@ button,
     max-height: none; }
   #banner .image img {
     height: auto; }
+
+/*
+  #map-small .image {
+    width: 80%; }
+    }
+  #map-small .image img {
+    height: auto;
+    }
+*/
   #main > .inner {
   /* increased padding on left side to prevent writing over sidebar icon */
     padding: 0 1.5em 0.1em 4em; }
@@ -2044,7 +2017,9 @@ button,
   .posts article,
   .mini-posts article {
     width: 80%;
-    margin-bottom: 1.5em; }
+    /* this messes up the layout on mobile screens
+    /*margin-bottom: 1.5em;*/
+    }
   .posts article .image,
   .mini-posts article .image {
     width: 80%;
@@ -2407,3 +2382,45 @@ input[type="radio"] + label:before {
           .posts article:last-child:after {
             display: none; } }
 */
+
+  /* this section messed up images in <span> sections, and only applied within certain screen dimensions (737 - 1001 px wide)
+  /*
+  @media screen and (orientation: portrait) {
+    #banner {
+      -moz-flex-direction: column-reverse;
+      -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
+      #banner h1 br {
+        display: none; }
+      #banner .content {
+        -moz-flex-grow: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-grow: 0;
+        flex-grow: 0;
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        width: 100%; }
+
+
+      #banner .image {
+        -moz-flex-grow: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-grow: 0;
+        flex-grow: 0;
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        margin: 0 0 4em 0;
+
+        height: 25em;
+        max-height: 50vh;
+        min-height: 18em;
+        width: 100%; }
+        }
+
+     }
+    /* */
