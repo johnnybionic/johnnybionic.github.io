@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	West Charlton Residents Association Website
 	- a static website for the WCRA, built using HTML5 UP's Editorial template
@@ -10,26 +10,36 @@
 -->
 <html lang="en-GB">
 <head>
-    <!-- Meta Description: Click-friendly local summary under 160 characters (supposed to help with searches) -->
-    <meta name="description" content="Welcome to the West Charlton Residents Association (WCRA). Stay updated on local neighborhood news, community events, and resident resources in West Charlton.">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 
     <title>West Charlton Residents Association | WCRA</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
-    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!-- SEO -->
+    <!-- Meta Description: Click-friendly local summary under 160 characters (supposed to help with searches) -->
+    <meta name="description" content="West Charlton Residents Association (WCRA) – local news, community events, and resident resources for West Charlton." />
+    <link rel="canonical" href="https://www.westcharlton.org/" />
+
+    <!-- Open Graph
+    an internet protocol that uses page metadata to control how web links appear when shared on social media and messaging platforms
+    -->
+    <meta property="og:title" content="West Charlton Residents Association" />
+    <meta property="og:description" content="Local news, events, and updates for West Charlton residents." />
+    <meta property="og:image" content="/images/bramshot_avenue_july_2026.jpg" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body class="is-preload">
 
-<!-- Wrapper -->
 <div id="wrapper">
 
-    <!-- Main -->
-    <div id="main">
+    <!-- Main Content -->
+    <main id="main">
         <div class="inner">
 
-            <!-- Header -->
+            <!-- Header (loaded dynamically) -->
             <div id="header-container"></div>
 
             <!-- Banner -->
@@ -37,118 +47,146 @@
                 <div class="content">
                     <header>
                         <h1>Welcome to the West Charlton Residents Association</h1>
-                        <h4>WCRA</h4>
+                        <h2>WCRA</h2>
                     </header>
                 </div>
 
-                <span class="image object">
-                    <img src="images/bramshot_avenue_july_2026.jpg" alt="Bramshot Avenue, looking east"/>
-                </span>
-
+                <figure class="image object">
+                    <img
+                            src="images/bramshot_avenue_july_2026.jpg"
+                            alt="Bramshot Avenue, looking east"
+                            loading="lazy"
+                            width="1020" height="574"
+                    />
+                </figure>
             </section>
 
+            <!-- Intro -->
             <section>
-                <p>We are a small group representing the residents of the Charlton Slopes area. Learn more about our history on the
-                    <a href="/about.html"> About</a> page
+                <p>
+                    We are a small group representing the residents of the Charlton Slopes area. 
+                    Learn more about our history on the 
+                    <a href="/about.html">About</a> page.
                 </p>
-<!--                <br/>-->
-                <a href="mailto:westcharltonratech@gmail.com?subject=WCRA%20mailing%20list&body=Please%20add%20me%20to%20your%20mailing%20list"
-                   class="button primary">Subscribe to our newsletter</a>
-                <br/>
+
+                <a 
+                    href="mailto:westcharltonratech@gmail.com?subject=WCRA%20mailing%20list&body=Please%20add%20me%20to%20your%20mailing%20list"
+                    class="button primary"
+                >
+                    Subscribe to our newsletter
+                </a>
+
                 <p class="paddingTop1em">
-                    <i >To use a form to subscribe, or to unsubscribe, use the <a
-                            href="/contact.html">Contact Us</a> page</i>
+                    <em>To use a form to subscribe or unsubscribe, visit the <a href="/contact.html">Contact Us</a> page.</em>
                 </p>
             </section>
 
-            <!-- UPDATES -->
+            <!-- Latest Updates -->
             <section>
                 <header class="major">
-                    <h2>Latest Updates </h2>
+                    <h2>Latest Updates</h2>
                 </header>
 
-                <!-- EVENTS AND NEWS -->
-                <section>
-                    <h2 >
+                <!-- Update 1 -->
+                <article>
+                    <h3>
                         <i class="icon solid fa-calendar-week" aria-hidden="true"></i>
-                        30th August 2026 at 10AM -
+                        30th August 2026 at 10AM – 
                         <a href="/events/litter-picking.html">Litter Picking</a>
-                    </h2>
-
-                    <p>Meet on the corner of Wyndcliff Road and Sandtoft Road - south side (even number houses)</p>
+                    </h3>
+                    <p>Meet on the corner of Wyndcliff Road and Sandtoft Road – south side (even-numbered houses).</p>
                     <a href="/events/litter-picking.html" class="button primary">More about litter picking</a>
-                    <hr/>
-                </section>
+                    <hr />
+                </article>
 
-                <section>
-                    <h2>
-                        <i class="icon solid fa-calendar-week link" aria-hidden="true"></i>
-                        From 21st August 2026 -
-                        <a href="https://festival.org/gdif-2026/" target="_blank" rel="noopener noreferrer">Greenwich & Dockland Festival</a>
-                    </h2>
-                    <h3>21st Aug - 6th Sep : various locations around Greenwich & Docklands</h3>
-                    <p>Opening performance by "360" at General Gordon Square in Woolwich</p>
-                    <hr/>
-                </section>
+                <!-- Update 2 -->
+                <article>
+                    <h3>
+                        <i class="icon solid fa-calendar-week" aria-hidden="true"></i>
+                        From 21st August 2026 – 
+                        <a href="https://festival.org/gdif-2026/" target="_blank" rel="noopener noreferrer">
+                            Greenwich & Dockland Festival
+                        </a>
+                    </h3>
+                    <p><strong>21st Aug – 6th Sep:</strong> various locations around Greenwich & Docklands.</p>
+                    <p>Opening performance by “360” at General Gordon Square in Woolwich.</p>
+                    <hr />
+                </article>
 
-                <section>
-                    <h2>
-                        <i class="icon solid fa-newspaper link" aria-hidden="true"></i>
+                <!-- Update 3 -->
+                <article>
+                    <h3>
+                        <i class="icon solid fa-newspaper" aria-hidden="true"></i>
                         <a href="https://communityconversations.royalgreenwich.gov.uk/statutory-consultation-school-streets-group-one"
-                           target="_blank" rel="noopener noreferrer">School Streets</a>
-                    </h2>
-                    <p>A consultation by the Council that affects Sherington, Our Lady of Grace and Invicta schools.
-                        The proposals would introduce restrictions on streets around the schools, preventing access and parking
-                        at specific times during term time.
-                        <br/>
+                           target="_blank" rel="noopener noreferrer">
+                            School Streets Consultation
+                        </a>
+                    </h3>
+                    <p>
+                        A consultation affecting Sherington, Our Lady of Grace and Invicta schools.
+                        The proposals introduce restrictions on nearby streets during term-time drop-off and pick-up hours.
+                        <br />
                         <a href="https://communityconversations.royalgreenwich.gov.uk/statutory-consultation-school-streets-group-one"
-                           target="_blank" rel="noopener noreferrer">Click here</a>
-                         to go to the Council's website for more information.
+                           target="_blank" rel="noopener noreferrer">
+                            Click here
+                        </a> for more information on the Council's website.
                     </p>
-                    <hr/>
-                </section>
+                    <hr />
+                </article>
 
-                <section>
-                    <h2>
-                        <i class="icon solid fa-newspaper link" aria-hidden="true"></i>
+                <!-- Update 4 -->
+                <article>
+                    <h3>
+                        <i class="icon solid fa-newspaper" aria-hidden="true"></i>
                         <a href="/news-and-updates/foot-tunnel.html">Pedestrian Subway (foot tunnel)</a>
-                    </h2>
-                    <p>A new "No cycling" sign has appeared on the railings of the Bramshot Avenue side of the pedestrian subway</p>
-                    <hr/>
-                </section>
-
-<!--                <a href="index-post-style.html" class="button large">Show alternate "Posts" Layout</a>-->
+                    </h3>
+                    <p>A new “No cycling” sign has appeared on the Bramshot Avenue side of the pedestrian subway.</p>
+                    <hr />
+                </article>
             </section>
 
-            <h3>Area covered - <a href="/large-map.html">click for larger map</a></h3>
+            <!-- Map -->
+            <section>
+                <h3>Area covered – <a href="/large-map.html">click for larger map</a></h3>
 
-            <div >
                 <a href="/large-map.html">
-                    <img class="image80percent" src="/images/catchment_area-small.jpg" alt="Map of the West Charlton Residents Association catchment area" />
+                    <img
+                            class="image80percent"
+                            src="/images/catchment_area-small.jpg"
+                            alt="Map of the West Charlton Residents Association catchment area"
+                            loading="lazy"
+                            width="461" height="454"
+                    />
                 </a>
-            </div>
-            Map data © <a href="https://openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a> contributors
+            </section>
+
+            <footer>
+                Map data ©
+                <a href="https://openstreetmap.org" target="_blank" rel="noopener">
+                    OpenStreetMap
+                </a> contributors
+            </footer>
 
         </div>
-    </div>
+    </main>
 
     <!-- Sidebar -->
-    <div id="sidebar">
-        <div class="inner" id="sidebar-content">
-        </div>
-    </div>
+    <aside id="sidebar" >
+        <div class="inner" id="sidebar-content"></div>
+    </aside>
+
 </div>
 
 <!-- Scripts -->
-<script src="/assets/js/include.js"></script>
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/browser.min.js"></script>
-<script src="/assets/js/breakpoints.min.js"></script>
-<script src="/assets/js/util.js"></script>
-<script src="/assets/js/main.js"></script>
+<script src="/assets/js/include.js" defer></script>
+<script src="/assets/js/jquery.min.js" defer></script>
+<script src="/assets/js/browser.min.js" defer></script>
+<script src="/assets/js/breakpoints.min.js" defer></script>
+<script src="/assets/js/util.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
 
-<script src="/assets/js/load-header.js"></script>
-<script src="/assets/js/load-sidebar.js"></script>
+<script src="/assets/js/load-header.js" defer></script>
+<script src="/assets/js/load-sidebar.js" defer></script>
 
 </body>
 </html>
