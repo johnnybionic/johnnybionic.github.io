@@ -27,6 +27,13 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+/* used for event listing articles */
+.event-listing {
+  padding-top: 10px;
+  border-bottom: 1px solid #f56a6a;
+  padding-bottom: 15px;
+}
+
 body {
   line-height: 1; }
 
@@ -58,11 +65,11 @@ body {
   body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
-    -ms-animation: none !important;
+    /*-ms-animation: none !important;*/
     animation: none !important;
-    -moz-transition: none !important;
+    /*-moz-transition: none !important;*/
     -webkit-transition: none !important;
-    -ms-transition: none !important;
+    /*-ms-transition: none !important;*/
     transition: none !important; }
 
 /* Type */
@@ -83,9 +90,9 @@ body, input, select, textarea {
       font-size: 9pt; } }
 
 a {
-  -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  /*-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;*/
   -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  /*-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;*/
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
   color: #f56a6a;
