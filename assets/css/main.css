@@ -27,12 +27,20 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* used for event listing articles */
+/* used for  articles */
 .event-listing {
   padding-top: 10px;
   border-bottom: 1px solid #f56a6a;
   padding-bottom: 15px;
 }
+
+.project-listing {
+  padding-top: 10px;
+  border-bottom: 1px solid #f56a6a;
+  padding-bottom: 1px;
+}
+
+/* ------------------- */
 
 body {
   line-height: 1; }
