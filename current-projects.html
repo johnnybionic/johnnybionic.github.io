@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
+
 <body class="is-preload">
 
 <!-- Wrapper -->
@@ -32,32 +33,46 @@
             </section>
 
             <!-- Section -->
-            <section>
+            <section aria-labelledby="active-projects-heading">
                 <header class="major">
-                    <h2>Active Projects</h2>
+                    <h2 id="active-projects-heading">Active Projects</h2>
                 </header>
+
                 <h3>Can you help?</h3>
                 <p>If any of these projects are of interest to you, and you'd like to help - even just advice or
-                    opinions - then please <a href="/contact.html">get in touch</a></p>
+                    opinions - then please <a href="/contact.html">get in touch</a>
+                </p>
+
                 <hr>
 
-                <div class="posts">
-                    <article class="project-listing">
+                <!-- Project Listings -->
+<!--                <div class="posts">-->
+                    <div>
 
-                        <a href="/news-and-updates/ltn.html" class="image fit"><img src="/images/LTN-restrictions.jpg" loading="lazy"
-                                                                                alt="LTN restrictions on Westcombe Hill"/></a>
-                        <h3><a href="/news-and-updates/ltn.html">LTN</a></h3>
+                    <article class="project-listing">
+                        <a href="/news-and-updates/ltn.html" class="image fit">
+                            <img src="/images/LTN-restrictions.jpg"
+                                 alt="LTN restrictions on Westcombe Hill"
+                                 loading="lazy">
+                        </a>
+                        <header>
+                            <h3><a href="/news-and-updates/ltn.html">LTN</a></h3>
+                        </header>
                         <p>Latest updates on the LTN project</p>
                         <ul class="actions">
                             <li><a href="/news-and-updates/ltn.html" class="button">More</a></li>
                         </ul>
                     </article>
+
                     <article class="project-listing">
-                        <a href="/news-and-updates/foot-tunnel.html" class="image fit"><img
-                                src="/images/foot-tunnel-july-2026.jpg"
-                                loading="lazy"
-                                alt="Foot tunnel at Bramshot Avenue"/></a>
-                        <h3><a href="/news-and-updates/foot-tunnel.html">Pedestrian subway</a></h3>
+                        <a href="/news-and-updates/foot-tunnel.html" class="image fit">
+                            <img src="/images/foot-tunnel-july-2026.jpg"
+                                 alt="Foot tunnel at Bramshot Avenue"
+                                 loading="lazy">
+                        </a>
+                        <header>
+                            <h3><a href="/news-and-updates/foot-tunnel.html">Pedestrian subway</a></h3>
+                        </header>
                         <p>Latest updates on the foot tunnel project</p>
                         <ul class="actions">
                             <li><a href="/news-and-updates/foot-tunnel.html" class="button">More</a></li>
@@ -65,10 +80,14 @@
                     </article>
 
                     <article class="project-listing">
-                        <a href="/news-and-updates/weed-control.html" class="image fit"><img src="/images/kerbside-weed.jpg"
-                                                                                             loading="lazy"
-                                                                                         alt="Weed growing at the kerbside"/></a>
-                        <h3><a href="/news-and-updates/weed-control.html">Weed Control</a></h3>
+                        <a href="/news-and-updates/weed-control.html" class="image fit">
+                            <img src="/images/kerbside-weed.jpg"
+                                 alt="Weed growing at the kerbside"
+                                 loading="lazy">
+                        </a>
+                        <header>
+                            <h3><a href="/news-and-updates/weed-control.html">Weed Control</a></h3>
+                        </header>
                         <p>News about weed control</p>
                         <ul class="actions">
                             <li><a href="/news-and-updates/weed-control.html" class="button">More</a></li>
@@ -76,23 +95,36 @@
                     </article>
 
                     <article class="project-listing">
-                        <h3><a role="link"aria-disabled="true">Sustainable Streets</a></h3>
+                        <header>
+                            <h3>
+                                <span class="disabled-link" aria-disabled="true">Sustainable Streets</span>
+                            </h3>
+                        </header>
                         <p>Parking, trees and electric car chargers are some of the issues that ...</p>
                         <ul class="actions">
-                            <li><a role="link"  aria-disabled="true" class="button">More</a></li>
+                            <li><span class="button disabled" aria-disabled="true">More</span></li>
                         </ul>
                     </article>
+
                     <article class="project-listing">
-                        <h3><a role="link" aria-disabled="true">Neighbourhood Growth Funds</a></h3>
-                        <p>We're seeking funds for local improvements such as a telephone box library,
-                            and a scooter park outside Sherington School
+                        <header>
+                            <h3>
+                                <span class="disabled-link" aria-disabled="true">Neighbourhood Growth Funds</span>
+                            </h3>
+                        </header>
+                        <p>
+                            We're seeking funds for local improvements such as a telephone box library
+                            and a scooter park outside Sherington School.
                         </p>
                         <ul class="actions">
-                            <li><a role="link" aria-disabled="true" class="button">More</a></li>
+                            <li><span class="button disabled" aria-disabled="true">More</span></li>
                         </ul>
                     </article>
+
                     <article class="project-listing">
-                        <h3><a href="/news-and-updates/wilding.html">Wilding</a></h3>
+                        <header>
+                            <h3><a href="/news-and-updates/wilding.html">Wilding</a></h3>
+                        </header>
                         <p>News on the wilding project</p>
                         <ul class="actions">
                             <li><a href="/news-and-updates/wilding.html" class="button">More</a></li>
