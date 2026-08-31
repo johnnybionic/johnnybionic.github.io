@@ -40,6 +40,46 @@ footer, header, hgroup, menu, nav, section {
   padding-bottom: 1px;
 }
 
+/* google improvement */
+/* Add this to your assets/css/main.css file */
+
+.resource-list {
+  list-style: none; /* Removes default bullet points */
+  padding: 0;
+  margin: 0 0 2em 0;
+}
+
+.resource-item {
+  display: flex;
+  justify-content: space-between; /* Pushes links to the far right */
+  align-items: flex-start;
+  padding: 1em 0;
+  border-bottom: solid 1px rgba(210, 215, 217, 0.75); /* Mimics table row separators */
+  gap: 20px; /* Replaces the inline style="margin-right:20px" */
+}
+
+.resource-item:last-child {
+  border-bottom: none;
+}
+
+.resource-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Ensures the text takes up available space */
+}
+
+.resource-description {
+  font-style: italic;
+  margin-top: 0.25em;
+  font-size: 0.9em;
+  color: #666; /* Adjust to match your theme's secondary text color */
+}
+
+.resource-links {
+  flex-shrink: 0; /* Prevents the social icon container from squishing */
+  min-width: 40px; /* Ensures consistent spacing even when empty */
+}
+
 /* ------------------- */
 
 body {
