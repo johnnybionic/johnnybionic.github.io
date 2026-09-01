@@ -54,18 +54,21 @@ footer, header, hgroup, menu, nav, section {
   justify-content: space-between; /* Pushes links to the far right */
   align-items: flex-start;
   padding: 1em 0;
-  border-bottom: solid 1px rgba(210, 215, 217, 0.75); /* Mimics table row separators */
+  border: solid 1px rgba(210, 215, 217, 0.75); /* Mimics table row separators */
+  border-radius: 10px;
   gap: 20px; /* Replaces the inline style="margin-right:20px" */
+  margin-bottom: 0.5em;
 }
 
-.resource-item:last-child {
-  border-bottom: none;
-}
+/*.resource-item:last-child {*/
+/*  border-bottom: none;*/
+/*}*/
 
 .resource-details {
   display: flex;
   flex-direction: column;
   flex-grow: 1; /* Ensures the text takes up available space */
+  padding-left: 1em;
 }
 
 .resource-description {
