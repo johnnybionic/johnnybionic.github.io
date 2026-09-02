@@ -91,7 +91,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .resource-section summary {
-  color: #301313;
+  color: #333f;
   cursor: pointer;
   font-family: "Roboto Slab", serif;
   font-size: 1.5em;
@@ -393,6 +393,11 @@ a.image {
 .image80percent {
     max-width:80vw;
     height:auto;
+}
+
+.image50percent {
+  max-width:50vw;
+  height:auto;
 }
 
 /* padding */
