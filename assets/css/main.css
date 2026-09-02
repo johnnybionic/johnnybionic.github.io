@@ -41,7 +41,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 /* google improvement */
-/* Add this to your assets/css/main.css file */
+/* formatting for local resources */
 
 .resource-list {
   list-style: none; /* Removes default bullet points */
@@ -78,10 +78,27 @@ footer, header, hgroup, menu, nav, section {
   color: #666; /* Adjust to match your theme's secondary text color */
 }
 
+
 .resource-links {
   flex-shrink: 0; /* Prevents the social icon container from squishing */
   min-width: 40px; /* Ensures consistent spacing even when empty */
 }
+
+
+/* Styling for the <details> and <summary> elements (collapsible sections) */
+.resource-section {
+  margin-bottom: 2em;
+}
+
+.resource-section summary {
+  color: #301313;
+  cursor: pointer;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0.75em;
+}
+
 
 /* ------------------- */
 
