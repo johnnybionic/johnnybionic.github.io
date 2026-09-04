@@ -6,10 +6,11 @@
 -->
 <html lang="en-GB">
 <head>
-    <title>News</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+    <meta name="description" content="Latest news in Charlton and Greenwich">
     <link rel="stylesheet" href="assets/css/main.css"/>
+    <title>News</title>
 </head>
 <body class="is-preload">
 
@@ -23,7 +24,7 @@
             <!-- Header -->
             <div id="header-container"></div>
 
-            <!-- Section -->
+            <!-- Content -->
             <section>
                 <header >
                     <h1>Latest News Articles</h1>
@@ -36,35 +37,34 @@
                 </header>
                 <hr/>
 
-                <h3>Beats, Boards and BBQ unlikely in 2026</h3>
-                <p>The popular community event could be another victim of Council cutbacks
-                </p>
-                <hr/>
+                <details class="resource-section" open>
+                    <summary>Royal Greenwich 2040 Local Plan</summary>
+                    <p>
+                        Responses have been submitted by several residents associations around the borough.
+                    </p>
+                </details>
 
-                <h3><a href="/news-and-updates/traffic-related.html" class="link">LTN and other traffic control</a></h3>
-                <p>The Council is proposing safer streets around schools</p>
-                <ul class="actions">
-                    <li><a href="/news-and-updates/traffic-related.html" class="button">More</a></li>
-                </ul>
-                <hr/>
+                <details class="resource-section" open>
+                    <summary id="traffic-control">Traffic Control</summary>
+                    <h3>School Streets</h3>
+                    <p>
+                        The Council is proposing safer streets around schools.
+                    </p>
 
-                <h3><a href="/news-and-updates/foot-tunnel.html" class="link">Foot tunnel</a></h3>
-                <p>A new "No Cycling" sign has been added on the Bramshot Avenue side. However ...</p>
-                <ul class="actions">
-                    <li><a href="/news-and-updates/foot-tunnel.html" class="button">More</a></li>
-                </ul>
-                <hr/>
+                    <a href="/news-and-updates/traffic-related.html#school-streets" class="button">More</a>
 
-                <h3><a href="/news-and-updates/weed-control.html" class="link">Weed Control</a></h3>
-                <p>We spoke with Pat, who ...</p>
-                <ul class="actions">
-                    <li><a href="/news-and-updates/weed-control.html" class="button">More</a></li>
-                </ul>
-                <hr/>
+                </details>
 
-                <h3>Graffiti</h3>
-                <p>At the top of Eastcombe Avenue ...</p>
-                <hr/>
+                <details class="resource-section" open>
+                    <summary id="subway">Pedestrian Subway</summary>
+                    <h3><a href="/news-and-updates/foot-tunnel.html" class="link">New sign</a></h3>
+                    <p>
+                        A new "No Cycling" sign has been added on the Bramshot Avenue side.
+                    </p>
+
+                    <a href="/news-and-updates/foot-tunnel.html#new-no-cycling-sign" class="button">More</a>
+
+                </details>
 
             </section>
 
