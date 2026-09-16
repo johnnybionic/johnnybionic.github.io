@@ -89,7 +89,8 @@
 					.appendTo($head);
 
 		// Toggle.
-			$('<a href="#sidebar" class="toggle">Toggle</a>')
+		// the text here is displayed where the "three bar/burger" is displayed
+			$('<a href="#sidebar" class="toggle"> </a>')
 				.appendTo($sidebar)
 				.on('click', function(event) {
 
