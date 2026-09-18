@@ -99,8 +99,16 @@ footer, header, hgroup, menu, nav, section {
 .resource-description {
   font-style: italic;
   margin-top: 0.25em;
-  font-size: 0.9em;
+  font-size: 1em;
   color: var(--resource-description-text-colour); /* Adjust to match your theme's secondary text color */
+}
+
+.resource-description-standalone {
+  font-style: normal;
+  margin-top: 0.25em;
+  font-size: 1em;
+  color: var(--resource-description-text-colour); /* Adjust to match your theme's secondary text color */
+  padding-left: 1em;
 }
 
 .resource-links {
@@ -217,6 +225,10 @@ h3 {
 
 h4 {
   font-size: 1.1em; }
+
+.padding-top-h4 {
+  padding-top: 1em;
+}
 
 h5 {
   font-size: 0.9em; }
@@ -500,7 +512,6 @@ ul.contact {
       font-style: normal;
       font-variant: normal;
       font-size: 1.5em;
-      line-height: 1.125em;
       text-rendering: auto;
       text-transform: none !important;
       color: var(--light-coral);
