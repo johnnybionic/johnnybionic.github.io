@@ -57,7 +57,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* used for  articles */
+/* used for event articles */
 .event-listing {
   padding-top: 10px;
   border-bottom: 1px solid var(--light-coral);
@@ -67,7 +67,7 @@ footer, header, hgroup, menu, nav, section {
 .project-listing {
   padding-top: 10px;
   border-bottom: 1px solid var(--light-coral);
-  padding-bottom: 1px;
+  padding-bottom: 1em;
 }
 
 /* google improvement */
