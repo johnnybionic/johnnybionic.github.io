@@ -131,6 +131,28 @@ footer, header, hgroup, menu, nav, section {
 }
 /* ------------------- */
 
+  .flex-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem; }
+
+  .flex-table .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem; }
+
+  .flex-table .flex-cell {
+    flex: 1 1 18rem;
+    min-width: 0; }
+
+  .flex-table .flex-cell a.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; }
+
 body {
   background: var(--body-background-colour); 
 }
@@ -222,6 +244,10 @@ h2.link a {
 
 h3 {
   font-size: 1.25em; }
+
+h3.link a {
+  border-bottom: dotted 2px var(--light-coral);
+}
 
 h4 {
   font-size: 1.1em; }
@@ -684,6 +710,9 @@ button,
     button.primary:active,
     .button.primary:active {
       background-color: var(--light-coral); }
+
+
+
   input[type="submit"].disabled, input[type="submit"]:disabled,
   input[type="reset"].disabled,
   input[type="reset"]:disabled,
