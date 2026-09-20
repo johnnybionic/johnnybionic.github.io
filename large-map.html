@@ -37,12 +37,10 @@
             <!-- allows quick navigation back if clicked on the small map
                 - can't include the footer here as it would mean two divs with the same name
             -->
-            <table class="for-buttons">
-                <tr>
-                    <td><a href="javascript:history.back()" class="button primary">Previous page</a></td>
-                    <td><a href="/index.html" class="button primary">Home</a></td>
-                </tr>
-            </table>
+            <div class="for-buttons" style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                <a href="/index.html" class="button primary">Home</a>
+                <a href="javascript:history.back()" class="button primary">Previous page</a>
+            </div>
 
             <h2>Streets covered - details</h2>
             <p>If your property is not shown here, refer to <a href="/local-resources.html">Local Resources</a> for other residents associations.
