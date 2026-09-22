@@ -24,7 +24,7 @@ html, body {
   --resource-summary-text-colour: #333;
   --resource-item-border-colour: rgba(210, 215, 217, 0.75);
   --resource-description-text-colour: #666;
-  --light-coral: #f56a6a;
+  --light-coral: #ca5c5c;
   --header-text-colour: #3d4449;
   --header-anchor-border-colour: black;
   --hr-border-colour: rgba(210, 215, 217, 0.75);
@@ -70,7 +70,6 @@ footer, header, hgroup, menu, nav, section {
   padding-bottom: 1em;
 }
 
-/* google improvement */
 /* formatting for local resources page */
 .resource-list {
   list-style: none; /* Removes default bullet points */
@@ -131,6 +130,7 @@ footer, header, hgroup, menu, nav, section {
 }
 /* ------------------- */
 
+/* Flex Table - used to display two (or more) buttons or links */
   .flex-table {
     display: flex;
     flex-direction: column;
@@ -188,7 +188,7 @@ body, input, select, textarea {
   line-height: 1.2; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
-      font-size: 0.9rem; } }
+      font-size: 1rem; } }
   @media screen and (max-width: 1280px) {
     body, input, select, textarea {
       font-size: 0.83rem; } }
@@ -966,6 +966,19 @@ button,
       #header .icons li:last-child {
         margin-right: 0; } }
 
+/* Footer */
+#footer {
+  display: flex;
+  justify-content: right;
+  padding: 1em 0 1em 0;
+}
+
+#footer .copyright {
+  color: var(--footer-copyright-colour);
+  font-size: 0.9em; }
+  #footer .copyright a {
+    color: inherit; }
+
 /* Banner */
 #banner {
   padding: 6em 0 4em 0 ;
@@ -1042,14 +1055,9 @@ button,
     width: 100%;
     text-align: center; } }
 
-/* Footer */
-#footer .copyright {
-  color: var(--footer-copyright-colour);
-  font-size: 0.9em; }
-  #footer .copyright a {
-    color: inherit; }
 
-/* Menu */
+
+/* used by the sidebar menu - not used in the main content */
 #menu ul {
   user-select: none;
   color: var(--menu-colour);
@@ -1094,6 +1102,8 @@ button,
         display: block; }
       #menu ul a.opener.active:before, #menu ul span.opener.active:before {
         transform: rotate(-180deg); }
+
+
 
 #menu > ul > li {
   border-top: solid 1px var(--menu-border-colour);
