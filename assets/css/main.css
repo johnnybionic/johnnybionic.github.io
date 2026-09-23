@@ -57,6 +57,28 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+.notice {
+  background-color: #EFEFEF;
+  border: 3px solid #444;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.notice::before {
+  content: " ℹ️ ";
+  background: #AACCFF;
+  width: 5rem;
+  border-right: 3px solid #444;
+  border-bottom: 3px solid #444;
+  display: block;
+  text-align: center;
+  position: relative;
+  left: -1rem;
+  top: -1rem;
+  padding: 2px 10px;
+  font-weight: bold;
+}
+
 /* used for event articles */
 .event-listing {
   padding-top: 10px;
