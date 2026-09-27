@@ -19,6 +19,7 @@ html, body {
 /* ---- */
 
 :root {
+  /* Colour variables - used throughout the CSS */
   --body-background-colour: #ffffff;
   --text-colour: #333;
   --resource-summary-text-colour: #333;
@@ -52,12 +53,16 @@ html, body {
 
   --blockquote-border-colour: rgba(210, 215, 217, 0.75);
   --code-border-colour: rgba(210, 215, 217, 0.75);
+
+  /* font sizes */
+  --up-to-1280px: 0.90rem;
 }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+  /* Used for pop-up style notices - e.g. "External Website not working" */
 .notice {
   background-color: #EFEFEF;
   border: 3px solid #444;
@@ -116,6 +121,10 @@ footer, header, hgroup, menu, nav, section {
   flex-direction: column;
   flex-grow: 1; /* Ensures the text takes up available space */
   padding-left: 1em;
+}
+
+.resource-details a {
+  font-weight: bold;
 }
 
 .resource-description {
@@ -238,7 +247,7 @@ body, input, select, textarea {
       font-size: 1rem; } }
   @media screen and (max-width: 1280px) {
     body, input, select, textarea {
-      font-size: 0.85rem; } }
+      font-size: var(--up-to-1280px); } }
   /* my screen is about 370px wide */
   @media screen and (max-width: 360px) {
     body, input, select, textarea {
