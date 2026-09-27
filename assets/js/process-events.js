@@ -9,8 +9,22 @@ eventListings.forEach(eventListing => {
     const timeElement = eventListing.querySelector('time');
     if (timeElement) {
         console.log('Time element:', timeElement);
-        const datetime = new Date(timeElement.getAttribute('datetime'));
+
+        let datetime;
+        try {
+            datetime = new Date(timeElement.getAttribute('datetime'));
+        } catch (e) {
+            console.error('Invalid datetime attribute:', timeElement.getAttribute('datetime'));
+            return;
+        }
+
         console.log('Datetime:', datetime);
+        // handle date-only events  
+        if (isNaN(datetime.getTime())) {
+            console.error('Invalid datetime format:', timeElement.getAttribute('datetime'));
+            return;
+        }
+
         if (datetime < today) {
             console.log('Event is in the past, removing:', eventListing);
             eventListing.remove();
