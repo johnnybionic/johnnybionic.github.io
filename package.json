@@ -1,0 +1,12 @@
+{
+  "name": "johnnybionic-github-io-tests",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "test:smoke": "playwright test tests/smoke"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "jsdom": "^24.1.0"
+  }
+}
