@@ -212,7 +212,7 @@ table {
   box-sizing: inherit; } */
 
 /* 
-  Google forms are embedded in iframes. The height of the iframe is set to a fixed value, which may need to be adjusted if the form content changes. 
+  Google forms are embedded in iframes. The height needs to be changed for mobile screens 
 */
 .google-form-newletter,
 .google-form-comment {
@@ -223,14 +223,17 @@ table {
 
 .google-form-newletter {
   height: 760px;
-  @media screen and (max-width: 425px) {
-    height: 835px;
-  }
 }
 
 .google-form-comment {
   height: 690px;
-  @media screen and (max-width: 425px) {
+}
+
+@media screen and (max-width: 425px) {
+  .google-form-newletter {
+    height: 835px;
+  }
+  .google-form-comment {
     height: 790px;
   }
 }
