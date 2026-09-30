@@ -4,10 +4,10 @@
 // List scripts in the order they must load
 const scripts = [
     "/assets/js/jquery.min.js",
-    "/assets/js/include.js",
+    // "/assets/js/include.js",
     "/assets/js/browser.min.js",
     "/assets/js/breakpoints.min.js",
-    "/assets/js/util.js",
+    // "/assets/js/util.js",
     "/assets/js/main.js",
     "/assets/js/load-header.js",
     "/assets/js/load-sidebar.js",
