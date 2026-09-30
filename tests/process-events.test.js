@@ -4,7 +4,7 @@ const { JSDOM } = require('jsdom');
 const { processEventListings } = require('../assets/js/process-events.js');
 
 function setupDocument(eventsHtml) {
-  const dom = new JSDOM(`<!doctype html><html><body>${eventsHtml}</body></html>`);
+  const dom = new JSDOM(`<!doctype html><html lang="en-GB"><body>${eventsHtml}</body></html>`);
   return dom.window.document;
 }
 
@@ -43,3 +43,10 @@ test('ignores entries without a valid time element', () => {
   assert.equal(removedCount, 0);
   assert.equal(document.querySelectorAll('.event-listing').length, 2);
 });
+
+// add a test that's 5 minutes into the past
+
+// add a test that's 5 minutes into the future
+
+// add a test for change of year (i.e. new year)
+
