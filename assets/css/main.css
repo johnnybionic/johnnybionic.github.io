@@ -66,13 +66,15 @@ footer, header, hgroup, menu, nav, section {
 .notice {
   background-color: #EFEFEF;
   border: 3px solid #444;
+  border-radius: 25px;
   padding: 1rem;
   margin: 2rem 0;
+  box-shadow: 5px 5px 8px #888888;
 }
 
 .notice::before {
   content: " ℹ️ ";
-  background: #AACCFF;
+  /*background: #AACCFF;*/
   width: 5rem;
   border-right: 3px solid #444;
   border-bottom: 3px solid #444;
@@ -730,7 +732,6 @@ button,
   .button:disabled {
     pointer-events: none;
     opacity: 0.25; }
-
 
 
 /* Wrapper */

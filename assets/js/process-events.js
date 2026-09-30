@@ -5,6 +5,9 @@ This script processes event listings on the page and removes any events that are
 (function (globalObject) {
     function processEventListings(referenceDate, documentObject) {
         const currentDate = referenceDate instanceof Date ? referenceDate : new Date();
+        // set to midnight (ignore hours, only interested in the day)
+        currentDate.setHours(0,0,0,0);
+
         const doc = documentObject || (typeof document !== 'undefined' ? document : null);
 
         if (!doc || typeof doc.querySelectorAll !== 'function') {

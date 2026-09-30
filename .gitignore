@@ -5,5 +5,5 @@
 =======
 /.idea/
 /package-lock.json
-/package.json
+/tests/package.json
 >>>>>>> Stashed changes

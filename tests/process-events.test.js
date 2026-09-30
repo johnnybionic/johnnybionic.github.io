@@ -8,13 +8,15 @@ function setupDocument(eventsHtml) {
   return dom.window.document;
 }
 
-test('removes event listings that are in the past', () => {
+test('removes event listings that are more than one day in the past', () => {
+  let today = new Date('2026-09-28T12:00:00Z');
+
   const document = setupDocument(`
     <div class="event-listing"><time datetime="2026-09-15T09:00:00Z">Past event</time></div>
     <div class="event-listing"><time datetime="2026-09-30T18:00:00Z">Future event</time></div>
   `);
 
-  const removedCount = processEventListings(new Date('2026-09-28T12:00:00Z'), document);
+  const removedCount = processEventListings(today, document);
 
   assert.equal(removedCount, 1);
   assert.equal(document.querySelectorAll('.event-listing').length, 1);
@@ -30,6 +32,34 @@ test('keeps event listings that are still in the future', () => {
 
   assert.equal(removedCount, 0);
   assert.equal(document.querySelectorAll('.event-listing').length, 1);
+});
+
+test('removes event listings from yesterday, keep today', () => {
+  let today = new Date('2026-09-28T12:00:00Z');
+
+  const document = setupDocument(`
+    <div class="event-listing"><time datetime="2026-09-27T09:00:00Z">Past event</time></div>
+    <div class="event-listing"><time datetime="2026-09-28T18:00:00Z">Today event, later</time></div>
+    <div class="event-listing"><time datetime="2026-09-28T09:00:00Z">Today event, earlier</time></div>
+  `);
+
+  const removedCount = processEventListings(today, document);
+
+  assert.equal(removedCount, 1);
+  assert.equal(document.querySelectorAll('.event-listing').length, 2);
+});
+
+test('keeps event listings that are today or in the future', () => {
+  const document = setupDocument(`
+    <div class="event-listing"><time datetime="2026-09-30T18:00:00Z">Future event</time></div>
+    <div class="event-listing"><time datetime="2026-09-28T13:00:00Z">Today event, later</time></div>
+    <div class="event-listing"><time datetime="2026-09-28T09:00:00Z">Today event, earlier</time></div>
+  `);
+
+  const removedCount = processEventListings(new Date('2026-09-28T12:00:00Z'), document);
+
+  assert.equal(removedCount, 0);
+  assert.equal(document.querySelectorAll('.event-listing').length, 3);
 });
 
 test('ignores entries without a valid time element', () => {
