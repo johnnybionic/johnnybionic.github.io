@@ -11,7 +11,9 @@ const scripts = [
     "/assets/js/main.js",
     "/assets/js/load-header.js",
     "/assets/js/load-sidebar.js",
-    "/assets/js/load-footer.js"
+    "/assets/js/load-footer.js",
+    "/assets/js/scroll-details-into-view.js",
+    "/assets/js/count.js"
 ];
 
 // Dynamically load scripts in sequence
