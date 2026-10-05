@@ -27,7 +27,7 @@ html, body {
   --resource-description-text-colour: #666;
   --light-coral: #ca5c5c;
   --header-text-colour: #3d4449;
-  --header-anchor-border-colour: black;
+  --header-anchor-border-colour: rgb(197, 152, 152);
   --hr-border-colour: rgba(210, 215, 217, 0.75);
   --subtle-background: #f8ecec;
 
@@ -301,7 +301,7 @@ h2 {
 
 /* h2 is used as links in posts - make it obvious it is a link */
 h2 a {
-  border-bottom: medium solid var(--header-anchor-border-colour);
+  border-bottom: 2px dotted var(--header-anchor-border-colour);
 }
 
 /* remove whitespace under h2 in header */
