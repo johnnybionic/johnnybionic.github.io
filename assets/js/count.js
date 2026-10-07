@@ -116,12 +116,14 @@
 			return 'visibilityState'
 		if (!goatcounter.allow_frame && location !== parent.location)
 			return 'frame'
+		if (location.hash === '#nocount')
+			return '#nocount'
 		if (!goatcounter.allow_local && location.hostname.match(/(localhost$|^127\.|^10\.|^172\.(1[6-9]|2[0-9]|3[0-1])\.|^192\.168\.|^0\.0\.0\.0$)/))
 			return 'localhost'
 		if (!goatcounter.allow_local && location.protocol === 'file:')
 			return 'localfile'
-		if (localStorage && localStorage.getItem('skipgc') === 't')
-			return 'disabled with #toggle-goatcounter'
+		// if (localStorage && localStorage.getItem('skipgc') === 't')
+		// 	return 'disabled with #toggle-goatcounter'
 		return false
 	}
 
@@ -238,16 +240,19 @@
 	}
 
 	// Make it easy to skip your own views.
-	if (location.hash === '#toggle-goatcounter') {
-		if (localStorage.getItem('skipgc') === 't') {
-			localStorage.removeItem('skipgc', 't')
-			alert('GoatCounter tracking is now ENABLED in this browser.')
-		}
-		else {
-			localStorage.setItem('skipgc', 't')
-			alert('GoatCounter tracking is now DISABLED in this browser until ' + location + ' is loaded again.')
-		}
-	}
+	// - stores a flag in localStorage to skip counting - may violate GDPR (if you use this on a public computer, be careful).
+	// use #nocount to skip counting, better than toggling
+
+	// if (location.hash === '#toggle-goatcounter') {
+	// 	if (localStorage.getItem('skipgc') === 't') {
+	// 		localStorage.removeItem('skipgc', 't')
+	// 		alert('GoatCounter tracking is now ENABLED in this browser.')
+	// 	}
+	// 	else {
+	// 		localStorage.setItem('skipgc', 't')
+	// 		alert('GoatCounter tracking is now DISABLED in this browser until ' + location + ' is loaded again.')
+	// 	}
+	// }
 
 	if (!goatcounter.no_onload)
 		on_load(function() {
