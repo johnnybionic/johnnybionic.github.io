@@ -4,7 +4,7 @@
 	'use strict';
 
 	//const GOATCOUNTER_ENDPOINT = 'https://westcharltonra.goatcounter.com/count';
-	const GOATCOUNTER_ENDPOINT = 'http://stats.westcharltonra.info/count';
+	const GOATCOUNTER_ENDPOINT = 'https://stats.westcharltonra.info/count';
 
 	window.goatcounter = window.goatcounter || {}
 
@@ -121,8 +121,8 @@
 			return 'frame'
 		if (localStorage && localStorage.getItem('skipgc') === 't')
 			return 'disabled with #nocount'
-		// if (!goatcounter.allow_local && location.hostname.match(/(localhost$|^127\.|^10\.|^172\.(1[6-9]|2[0-9]|3[0-1])\.|^192\.168\.|^0\.0\.0\.0$)/))
-		// 	return 'localhost'
+		if (!goatcounter.allow_local && location.hostname.match(/(localhost$|^127\.|^10\.|^172\.(1[6-9]|2[0-9]|3[0-1])\.|^192\.168\.|^0\.0\.0\.0$)/))
+			return 'localhost'
 		if (!goatcounter.allow_local && location.protocol === 'file:')
 			return 'localfile'
 		return false
