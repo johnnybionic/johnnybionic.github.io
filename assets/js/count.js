@@ -3,11 +3,11 @@
 ;(function() {
 	'use strict';
 
-	//const GOATCOUNTER_ENDPOINT = 'https://westcharltonra.goatcounter.com/count';
-	const GOATCOUNTER_ENDPOINT = 'https://stats.westcharltonra.info/count';
+	const GOATCOUNTER_ENDPOINT = 'https://westcharltonra.goatcounter.com/count';
+	//const GOATCOUNTER_ENDPOINT = 'https://stats.westcharltonra.info/count';
 
 	window.goatcounter = window.goatcounter || {}
-
+	
 	window.goatcounter.endpoint = window.goatcounter.endpoint || GOATCOUNTER_ENDPOINT;
 	console.log(window.goatcounter.endpoint);
 
