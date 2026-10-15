@@ -52,6 +52,7 @@ html, body {
   --menu-border-colour: rgba(210, 215, 217, 0.75);
 
   --blockquote-border-colour: rgba(210, 215, 217, 0.75);
+  --blockquote-quote-colour: var(--light-coral);
   --code-border-colour: rgba(210, 215, 217, 0.75);
 
   /* font sizes */
@@ -87,6 +88,38 @@ footer, header, hgroup, menu, nav, section {
   font-weight: bold;
 }
 
+/* for quoted text */
+blockquote {
+  border-left: solid 4px var(--blockquote-border-colour);
+  font-style: italic;
+  margin: 0 0 2em 0;
+  padding: 0.5em 0 0.5em 2em; 
+  
+}
+
+blockquote:before {
+    display: block;
+    font-size: 300%;
+    color: var(--blockquote-quote-colour);
+    content: open-quote;
+    height: 1px;
+    margin-left: -0.55em;
+    position:relative;
+    top:-20px;
+}
+
+blockquote:after {
+    display: block;
+    font-size: 300%;
+    color: var(--blockquote-quote-colour);
+    content: close-quote;
+    height: 1px;
+    margin-left: -0.55em;
+    position:relative;
+  }
+
+/* ------------------- */
+
 /* used for event articles */
 .event-listing {
   padding-top: 10px;
@@ -111,11 +144,20 @@ footer, header, hgroup, menu, nav, section {
   display: flex;
   justify-content: space-between; /* Pushes links to the far right */
   align-items: flex-start;
-  border: solid 1px var(--resource-item-border-colour); /* Mimics table row separators */
+  border: solid 1px var(--resource-item-border-colour); 
   border-radius: 10px;
-  gap: 1.25em; /* Replaces the inline style="margin-right:20px" */
+  gap: 1.25em; 
   padding: 1em 0;
   margin-bottom: 0.5em;
+}
+
+.resource-item blockquote {
+  padding: 0.5em 0 0.5em 2em;
+  margin: 0 0 1em 0;
+}
+
+.resource-item blockquote:before, .resource-item blockquote:after {
+  font-size: 200%;
 }
 
 .resource-details {
@@ -133,14 +175,14 @@ footer, header, hgroup, menu, nav, section {
   font-style: italic;
   margin-top: 0.25em;
   font-size: 1em;
-  color: var(--resource-description-text-colour); /* Adjust to match your theme's secondary text color */
+  color: var(--resource-description-text-colour);
 }
 
 .resource-description-standalone {
   font-style: normal;
   margin-top: 0.25em;
   font-size: 1em;
-  color: var(--resource-description-text-colour); /* Adjust to match your theme's secondary text color */
+  color: var(--resource-description-text-colour);
   padding-left: 1em;
 }
 
@@ -196,25 +238,6 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-re
   transition: none !important; 
 }
 
-/* for quoted text */
-blockquote {
-  border-left: solid 4px var(--blockquote-border-colour);
-  font-style: italic;
-  margin: 0 0 2em 0;
-  padding: 0.5em 0 0.5em 2em; 
-  
-}
-
-blockquote:before {
-    display: block;
-    font-size: 300%;
-    content: open-quote;
-    height: 1px;
-    margin-left: -0.55em;
-    position:relative;
-    top:-20px;
-}
-/* ------------------- */
 
 ol, ul {
   list-style: none; }
