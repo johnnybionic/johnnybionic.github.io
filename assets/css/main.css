@@ -196,6 +196,26 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-re
   transition: none !important; 
 }
 
+/* for quoted text */
+blockquote {
+  border-left: solid 4px var(--blockquote-border-colour);
+  font-style: italic;
+  margin: 0 0 2em 0;
+  padding: 0.5em 0 0.5em 2em; 
+  
+}
+
+blockquote:before {
+    display: block;
+    font-size: 300%;
+    content: open-quote;
+    height: 1px;
+    margin-left: -0.55em;
+    position:relative;
+    top:-20px;
+}
+/* ------------------- */
+
 ol, ul {
   list-style: none; }
 
@@ -206,12 +226,6 @@ table {
 @media screen and (max-width: 480px) {
   html, body {
     min-width: 320px; } }
-
-/* html {
-  box-sizing: border-box; }
-
-*, *:before, *:after {
-  box-sizing: inherit; } */
 
 /* 
   Google forms are embedded in iframes. The height needs to be changed for mobile screens 
@@ -1214,5 +1228,4 @@ section.special, article.special {
   #search form input[type="text"] {
     padding-right: 2.75em; }
 */
-
 

@@ -9,7 +9,7 @@
 	window.goatcounter = window.goatcounter || {}
 
 	window.goatcounter.endpoint = window.goatcounter.endpoint || GOATCOUNTER_ENDPOINT;
-	console.log(window.goatcounter.endpoint);
+	//console.log(window.goatcounter.endpoint);
 
 	// Load settings from data-goatcounter-settings.
 	var s = document.querySelector('script[data-goatcounter]')
