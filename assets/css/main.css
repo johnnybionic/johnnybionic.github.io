@@ -158,6 +158,7 @@ blockquote:after {
 
 .resource-item blockquote:before, .resource-item blockquote:after {
   font-size: 200%;
+  top: 0;
 }
 
 .resource-details {
@@ -979,8 +980,11 @@ button,
       #header .icons li:last-child {
         margin-right: 0; } }
 
-/* used in the header for the page description */
-header p {
+/* used in the header for the page description 
+        - also used to highlight interesting events, such as litter picking
+*/
+header p,
+.page-description {
   font-family: "Roboto Slab", serif;
   font-size: 1em;
   font-weight: 400;
