@@ -57,6 +57,9 @@ html, body {
 
   /* font sizes */
   --up-to-1280px: 0.90rem;
+
+  /* --highlight-description-background: #0ae4b4; */
+  --highlight-description-background: teal;
 }
 
 article, aside, details, figcaption, figure,
@@ -125,6 +128,10 @@ blockquote:after {
   padding-top: 10px;
   border-bottom: 1px solid var(--light-coral);
   padding-bottom: 15px;
+}
+
+.event-listing-important {
+  background-color: var(--subtle-background);
 }
 
 .project-listing {
@@ -229,6 +236,18 @@ blockquote:after {
     justify-content: center;
     width: 100%;
     height: 100%; }
+
+.highlight-description {
+  font-family: "Roboto Slab", serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.075em;
+  margin-top: -0.5em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  background-color: var(--highlight-description-background);
+}
+
 
 body {
   background: var(--body-background-colour); 
@@ -994,6 +1013,7 @@ header p,
   padding: 0.5em 0.5em 0.5em 0.5em;
   background-color: var(--subtle-background);
 }
+
 
 /* Footer */
 #footer {
