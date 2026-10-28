@@ -1,9 +1,8 @@
 // GoatCounter: https://www.goatcounter.com
-// This file is released under the ISC license: https://opensource.org/licenses/ISC
+// This file is released under the ISC licence: https://opensource.org/licenses/ISC
 ;(function() {
 	'use strict';
 
-	//const GOATCOUNTER_ENDPOINT = 'https://westcharltonra.goatcounter.com/count';
 	const GOATCOUNTER_ENDPOINT = 'https://stats.westcharltonra.info/count';
 
 	window.goatcounter = window.goatcounter || {}
