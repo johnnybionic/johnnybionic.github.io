@@ -132,6 +132,7 @@ blockquote:after {
 
 .event-listing-important {
   background-color: var(--subtle-background);
+  padding: 10px 10px 10px 10px;
 }
 
 .project-listing {
